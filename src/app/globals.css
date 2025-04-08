@@ -1,12 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
 html, body {
     margin: 0;
     padding: 0;
 }
 
 .container {
-    padding: 15px 50px 5px;
+    padding: 15px 80px 5px;
 }
 
+.link {
+    cursor: pointer;
+}
+
+/* Navbar */
 nav {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -51,6 +59,121 @@ nav .second-row ul li {
     cursor: pointer;
 }
 
-.link {
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding-top: 50px;
+}
+
+.footer .first-row {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding-bottom: 20px;
+}
+
+.subscribe-box p {
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.subscribe-box span {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
+
+
+.subscribe-box div {
+    margin-top: 48px;
+    display: flex;
+    gap: 10;
+}
+
+.subscribe-box div input {
+    padding: 8px 15px;
+    border: none;
+    max-width: 300px;
+    width: 100%;
+}
+
+.subscribe-box div input::placeholder {
+    font-size: 14px;
+    color: #BFC8CD
+}
+
+.subscribe-box div button {
+    background-color: black;
+    color: #4f4d4d;
+    border: 1px solid #4f4d4d;
+    border-radius: 5px;
+    padding: 10px 30px;
     cursor: pointer;
+}
+
+.contact-box div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box div p {
+    margin: 0;
+    font-weight: 700;
+}
+
+.contact-box div span {
+    font-weight: 400;
+    font-size: 14px;
+    margin: 0;
+}
+
+.contact-box div:last-child div {
+    display: flex;
+    flex-direction: row;
+    gap: 5;
+    margin: 15px 0px;
+}
+
+.footer .second-row {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 2fr;
+    border-top: 1px solid white;
+    padding-top: 30px;
+}
+
+.footer .second-row p {
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.footer .second-row ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10;
+}
+
+.follow-box .socials {
+    display: flex;
+    align-items: center;
+    gap: 10;
+}
+
+.follow-box div:last-child p {
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.follow-box div:last-child div {
+    display: flex;
+    gap: 10;
+}
+
+.footer .third-row p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 15px 0px;
 }

@@ -6,7 +6,7 @@ import Shop from '../../assets/shopping-bag.svg'
 import Profile from '../../assets/profile.svg'
 
 export const Navbar = () => {
-    console.log({ Logo })
+    
     return (
         <nav className="container">
             <div className='first-row'>
