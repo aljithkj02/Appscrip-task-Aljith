@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     font-family: "Inter", sans-serif;
@@ -163,7 +164,7 @@ nav .second-row ul li {
     padding-top: 30px;
 }
 
-.footer .second-row p {
+.footer .second-row label {
     font-weight: 700;
 }
 
@@ -185,6 +186,7 @@ nav .second-row ul li {
     align-items: center;
     gap: 10;
     cursor: pointer;
+    margin-top: 12px;
 }
 
 .follow-box div:last-child p {
@@ -202,4 +204,210 @@ nav .second-row ul li {
     font-weight: 400;
     font-size: 12px;
     padding: 15px 0px;
+}
+
+.footer .divider {
+    display: none;
+}
+
+.footer .contact-info {
+    display: flex;
+    gap: 10;
+    margin-bottom: 20;
+}
+
+.mobileOn {
+    display: none;
+}
+
+.mobileOff {
+    display: block;
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .footer .first-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;
+        gap: 20;
+    }
+
+    .footer .divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #E5E5E5;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .footer .contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .second-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-top: 1px solid white;
+        padding-top: 30px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    /* Navbar */
+    .container {
+        padding: 15px 20px 5px;
+    }
+
+    .mobileOn {
+        display: block;
+    }
+
+    .mobileOff {
+        display: none;
+    }
+
+    nav .first-row div:first-child {
+        display: flex;
+        gap: 10;
+    }
+
+    nav .second-row ul {
+        list-style: none;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 10;
+        padding: 0;
+    }
+
+    nav .second-row ul li:first-child {
+        color: gray;
+    }
+
+    .navDivider {
+        width: 0;
+        height: 13px;
+        border-left: 1px solid gray;
+    }
+
+    /* Footer  */
+    .footer .first-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20;
+    }
+
+    .footer .divider {
+        display: block;
+        width: 100%;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #E5E5E5;
+        margin: 1em 0;
+        padding: 0;
+    }
+
+    .footer .contact-info {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .footer .second-row {
+        display: grid;
+        grid-template-columns: 1fr;
+        border-top: 1px solid white;
+    }
+
+    .subscribe-box div input {
+        padding: 8px 15px;
+        border: none;
+        max-width: 300px;
+        width: 65%;
+    }
+
+    .subscribe-box div button {
+        border-radius: 5px;
+        padding: 10px 0px;
+        font-size: 13px;
+        width: 35%;
+    }
+
+    .footer .first-row .divider {
+        margin: 0;
+    }
+
+    .subscribe-box div {
+        margin-top: 10px;
+        display: flex;
+        gap: 10;
+    }
+
+    .contact-box div:last-child p {
+        margin-top: 15px;
+    }
+
+    .footer .second-row {
+        padding-top: 0px;
+    }
+
+    .follow-box .socials {
+        margin-top: 0px;
+    }    
+
+    .follow-box div:last-child div {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 0;
+    }
+
+    /* Dropdown */
+
+    .dropdown {
+        width: 100%;
+        font-family: sans-serif;
+    }
+
+    .dropdown-toggle {
+        display: none;
+    }
+
+    .dropdown-wrapper {
+        border-bottom: 1px solid #ccc;
+        transition: border-bottom 0.3s ease;
+        padding-bottom: 8px;
+    }
+
+    .dropdown-label {
+        display: flex;
+        cursor: pointer;
+        padding: 15px 0px 10px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .dropdown-content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+    }
+
+    .dropdown-content ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    .dropdown-toggle:checked+.dropdown-wrapper .dropdown-content {
+        max-height: 500px;
+    }
+
+    .dropdown-toggle:checked+.dropdown-wrapper {
+        border-bottom: 1px solid #ccc;
+    }
 }

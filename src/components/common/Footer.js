@@ -8,6 +8,7 @@ import Paypal from '../../assets/paypal.png'
 import Amex from '../../assets/amex.png'
 import ApplePay from '../../assets/applePay.png'
 import Opay from '../../assets/oPay.png'
+import DownArrow from '../../assets/downArrow.svg'
 
 export const Footer = () => {
 
@@ -29,12 +30,18 @@ export const Footer = () => {
                     </div>
                 </div>
 
+                <hr className='divider' />
+
                 <div className='contact-box'>
                     <div>
                         <p>CONTACT US</p> <br />
-                        <span>+44 221 133 5360</span> <br />
-                        <span>customercare@mettamuse.com</span> <br />
+                        <div className='contact-info'>
+                            <span>+44 221 133 5360</span>
+                            <span>customercare@mettamuse.com</span>
+                        </div>
                     </div>
+
+                    <hr className='divider' />
 
                     <div>
                         <p>CURRENCY</p>
@@ -49,38 +56,69 @@ export const Footer = () => {
             </div>
 
             <div className='second-row'>
-                <div>
-                    <p>mettā muse</p>
-                    <ul>
-                        <li>About Us</li>
-                        <li>Stories</li>
-                        <li>Artisans</li>
-                        <li>Boutiques</li>
-                        <li>Contact Us</li>
-                        <li>EU Compliances Docs</li>
-                    </ul>
+
+                <div className="dropdown">
+                    <input type="checkbox" id="toggle" className="dropdown-toggle mobileOn" />
+
+                    <div className="dropdown-wrapper">
+                        <label for="toggle" className="dropdown-label">mettā muse
+                            <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
+                        </label>
+
+                        <div className="dropdown-content">
+                            <ul>
+                                <li>About Us</li>
+                                <li>Stories</li>
+                                <li>Artisans</li>
+                                <li>Boutiques</li>
+                                <li>Contact Us</li>
+                                <li>EU Compliances Docs</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
-                <div>
-                    <p>QUICK LINKS</p>
-                    <ul>
-                        <li>Orders & Shippling</li>
-                        <li>Join/Login as a Seller</li>
-                        <li>Payment & Pricing</li>
-                        <li>Return & Refunds</li>
-                        <li>FAQs</li>
-                        <li>Privacy Policy</li>
-                        <li>Terms & Conditions</li>
-                    </ul>
+
+                <div className="dropdown">
+                    <input type="checkbox" id="links" className="dropdown-toggle mobileOn" />
+
+                    <div className="dropdown-wrapper">
+                        <label for="links" className="dropdown-label">QUICK LINKS
+                            <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
+                        </label>
+                        <div className="dropdown-content">
+                            <ul>
+                                <li>Orders & Shippling</li>
+                                <li>Join/Login as a Seller</li>
+                                <li>Payment & Pricing</li>
+                                <li>Return & Refunds</li>
+                                <li>FAQs</li>
+                                <li>Privacy Policy</li>
+                                <li>Terms & Conditions</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <div className='follow-box'>
-                    <p>FOLLOW US</p>
 
-                    <div className='socials'>
-                        <Image src={Insta} alt="instagram" width={30} />
-                        <Image src={Linkedin} alt="linkedin" width={30} />
+                    <div className="dropdown">
+                        <input type="checkbox" id="follow" className="dropdown-toggle mobileOn" />
+
+                        <div className="dropdown-wrapper">
+                            <label for="follow" className="dropdown-label">FOLLOW US
+                                <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
+                            </label>
+                            <div className="dropdown-content">
+
+                                <div className='socials'>
+                                    <Image src={Insta} alt="instagram" width={30} />
+                                    <Image src={Linkedin} alt="linkedin" width={30} />
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
 
                     <div>
                         <p>mettā muse Accepts</p>
