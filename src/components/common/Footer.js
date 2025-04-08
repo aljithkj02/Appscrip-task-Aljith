@@ -24,7 +24,7 @@ export const Footer = () => {
                         />
 
                         <button>
-                            Subscribe
+                            SUBSCRIBE
                         </button>
                     </div>
                 </div>

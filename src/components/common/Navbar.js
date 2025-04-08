@@ -4,6 +4,7 @@ import Search from '../../assets/search-normal.svg'
 import Heart from '../../assets/heart.svg'
 import Shop from '../../assets/shopping-bag.svg'
 import Profile from '../../assets/profile.svg'
+import DownArrow from '../../assets/downArrow.svg'
 
 export const Navbar = () => {
     
@@ -23,6 +24,10 @@ export const Navbar = () => {
                     <Image className='link' src={Heart} alt="Heart" width={20} />
                     <Image className='link' src={Shop} alt="Shppping" width={20} />
                     <Image className='link' src={Profile} alt="Profile" width={20} />
+                    <div>
+                        <span>ENG</span>
+                        <Image className='link' src={DownArrow} alt="drop down" width={15} />
+                    </div>
                 </div>
             </div>
 
