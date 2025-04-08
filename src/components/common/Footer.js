@@ -37,7 +37,7 @@ export const Footer = () => {
                     </div>
 
                     <div>
-                        <p>Currency</p>
+                        <p>CURRENCY</p>
 
                         <div>
                             <Image src={UsFlag} alt='US flag' width={20} />
