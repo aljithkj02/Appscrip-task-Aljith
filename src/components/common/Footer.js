@@ -61,7 +61,7 @@ export const Footer = () => {
                     <input type="checkbox" id="toggle" className="dropdown-toggle mobileOn" />
 
                     <div className="dropdown-wrapper">
-                        <label for="toggle" className="dropdown-label">mettā muse
+                        <label htmlFor="toggle" className="dropdown-label">mettā muse
                             <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
                         </label>
 
@@ -83,7 +83,7 @@ export const Footer = () => {
                     <input type="checkbox" id="links" className="dropdown-toggle mobileOn" />
 
                     <div className="dropdown-wrapper">
-                        <label for="links" className="dropdown-label">QUICK LINKS
+                        <label htmlFor="links" className="dropdown-label">QUICK LINKS
                             <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
                         </label>
                         <div className="dropdown-content">
@@ -106,7 +106,7 @@ export const Footer = () => {
                         <input type="checkbox" id="follow" className="dropdown-toggle mobileOn" />
 
                         <div className="dropdown-wrapper">
-                            <label for="follow" className="dropdown-label">FOLLOW US
+                            <label htmlFor="follow" className="dropdown-label">FOLLOW US
                                 <Image className='mobileOn' src={DownArrow} alt="drop down" width={15} />
                             </label>
                             <div className="dropdown-content">

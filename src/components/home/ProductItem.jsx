@@ -9,7 +9,7 @@ export const ProductItem = ({ image, title, description }) => {
                 <p>{ title.length > 30 ? title.slice(0, 30) + "..." : title }</p>
                 <div>
                     <span>{ description.length > 40 ? description.slice(0, 40) + "..." : description }</span>
-                    <Image src={Heart} alt="Heart" width={25} />
+                    <Image src={Heart} alt="Heart" width={23} />
                 </div>
             </div>
         </div>
