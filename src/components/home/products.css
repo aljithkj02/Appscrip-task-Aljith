@@ -1,0 +1,122 @@
+#filterBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+#filterBox div:first-child {
+    display: flex;
+    align-items: center;
+    gap: 50;
+}
+
+#filterBox div:first-child p,
+#filterBox div:last-child .selected-value {
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#filterBox div:first-child span {
+    font-weight: 400;
+    font-size: 15px;
+    color: #888792;
+    text-decoration: underline;
+}
+
+#filterBox div:first-child div {
+    display: flex;
+    align-items: center;
+    gap: 5;
+}
+
+#filterBox div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 5;
+}
+
+
+
+/*  */
+.custom-dropdown {
+    width: 200px;
+    position: relative;
+    font-size: 14px;
+    user-select: none;
+    text-align: right;
+    display: flex;
+    justify-content: end;
+}
+
+.selected-value {
+    padding: 10px;
+    background-color: white;
+    cursor: pointer;
+    text-align: right;
+}
+
+.dropdown-options {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 7px;
+    border-radius: 4px;
+}
+
+.dropdown-option {
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.dropdown-option:hover {
+    background-color: #f0f0f0;
+}
+
+.dropdown-option.selected {
+    font-weight: bold;
+}
+
+
+@media (max-width: 767px) {
+
+    #filterBox {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: none;
+        text-align: center;
+        padding-bottom: 0px;
+    }
+
+    .filter-parent {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    #filterBox > div:first-child div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .custom-dropdown {
+        display: flex;
+        justify-content: center;
+    }
+
+    .filter-parent section {
+        padding: 0px;
+    }
+
+    #filterBox > div:first-child {
+        border-right: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
