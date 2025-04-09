@@ -1,7 +1,7 @@
 import Home from "@/pages/Home";
 
 
-export default function () {
+export default function HomeComp () {
     return (
         <Home />
     );
